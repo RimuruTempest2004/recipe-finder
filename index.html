@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Guru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo"><i class="fa-solid fa-utensils"></i> Gourmet Guru</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Find Your Next Favorite Meal</h1>
+            <p>Search thousands of recipes from around the world.</p>
+        </section>
+
+        <section class="controls">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search for 'pasta', 'chicken', 'vegan'...">
+            </div>
+            <div class="filters">
+                <div class="select-wrapper">
+                    <select id="cuisineFilter">
+                        <option value="">All Cuisines</option>
+                        <option value="African">African</option>
+                        <option value="American">American</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="European">European</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Mexican">Mexican</option>
+                        <option value="Thai">Thai</option>
+                    </select>
+                </div>
+                <div class="select-wrapper">
+                    <select id="dietFilter">
+                        <option value="">Any Diet</option>
+                        <option value="Gluten Free">Gluten Free</option>
+                        <option value="Ketogenic">Ketogenic</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Lacto-Vegetarian">Lacto-Vegetarian</option>
+                        <option value="Ovo-Vegetarian">Ovo-Vegetarian</option>
+                        <option value="Vegan">Vegan</option>
+                        <option value="Pescetarian">Pescetarian</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipeGrid" class="recipe-grid"></section>
+    </main>
+
+    <footer>
+        <p>Powered by the Spoonacular API</p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js" type="module"></script>
+    <script src="js/ui.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
+
+</body>
+
+</html>
